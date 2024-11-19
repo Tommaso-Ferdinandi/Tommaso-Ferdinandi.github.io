@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: rgb(35, 35, 35);
+  padding: 50px 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+#nome {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+  float: left;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  border: 2px solid rgb(50, 50, 50);
+  padding: 15px 15px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+.menu-icon .nav-icon {
+  background-color: rgb(140, 140, 140);
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: relative;
+}
+
+.header .menu-icon .nav-icon:before, .header .menu-icon .nav-icon:after {
+  background-color: rgb(140, 140, 140);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  top: 5px;
+}
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+.menu-link {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  clear: both;
+}
+.menu-link li a {
+  text-decoration: none;
+  color: rgb(140, 140, 140);
+  padding: 15px;
+  display: block;
+}
+
+.header .menu-btn:checked ~ .menu-link {
+  max-height: 1000px;
+}
+
+.header .menu-btn:checked ~ .menu-icon {
+  border: 2px solid rgb(140, 140, 140);
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 190px 10px 50px 10px;
+  font-size: 1.1em;
+  align-items: center;
+  font-style: italic;
+  border-bottom: 2px solid rgb(35, 35, 35);
+}
+.about .foto-profilo {
+  max-width: 30%;
+  max-height: 30%;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px gray;
+}
+.about .descrizione {
+  margin-left: 10px;
+}
+
+.skills, .contatti, .progetti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid rgb(35, 35, 35);
+  padding: 50px 0px;
+}
+
+.skills-livello {
+  width: 90%;
+}
+.skills-livello span {
+  font-size: 0.9em;
+}
+.skills-livello .progress {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.skills-livello .progress .progress-bar {
+  background-color: rgb(35, 35, 35);
+}
+
+section h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.progetti .tutte-cards {
+  display: flex;
+  justify-content: center;
+}
+.progetti .card {
+  width: 60%;
+  border: 2px solid gray;
+  box-shadow: 5px 5px 5px gray;
+}
+.progetti .card img {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  text-align: center;
+}
+.progetti .card a {
+  background-color: rgb(35, 35, 35);
+  margin-right: 10px;
+}
+.progetti .card a:hover {
+  background-color: rgb(35, 35, 35);
+}
+.progetti .card a:active {
+  background-color: rgb(35, 35, 35);
+}
+
+.contatti {
+  border-bottom: none;
+  min-height: 300px;
+}
+.contatti p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contatti .buttons {
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
+}
+.contatti a:hover {
+  background-color: rgb(35, 35, 35);
+}
+.contatti a:active {
+  background-color: rgb(35, 35, 35);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px 30px 0px;
+  min-width: 100%;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  border: 2px solid rgb(35, 35, 35);
+}
+footer p {
+  width: 40%;
+  font-size: 0.6em;
+  text-align: center;
+}
+footer nav {
+  margin: 0px 30px 20px 0px;
+  max-width: 20%;
+  max-height: 10%;
+}
+footer nav a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .menu-link {
+    max-height: 1000px;
+    display: flex;
+  }
+  .core {
+    display: block;
+    max-width: 80%;
+  }
+  .core .about {
+    padding: 50px 0px;
+  }
+  .core .about .descrizione p {
+    font-size: 1.2em;
+  }
+  .core section h2 {
+    font-size: 1.7em;
+  }
+  .core .skills span, .core .progetti span, .core .contatti span {
+    font-size: 1em;
+  }
+  .core .card-2 {
+    margin-left: 40px;
+  }
+  .core .contatti p {
+    font-size: 1.1em;
+  }
+  footer p {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 993px) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .header #nome {
+    font-size: 2.2em;
+  }
+  .header a {
+    font-size: 1.1em;
+  }
+  .core {
+    display: block;
+    max-width: 70%;
+  }
+  .core .about .descrizione p {
+    font-size: 1.3em;
+  }
+  .core section h2 {
+    font-size: 1.8em;
+  }
+  .core .skills span, .core .progetti span, .core .contatti span {
+    font-size: 1.1em;
+  }
+  .core .contatti p {
+    font-size: 1.2em;
+  }
+  .core .contatti a {
+    font-size: 1.2em;
+  }
+  footer p {
+    font-size: 0.8em;
+    margin-right: 300px;
+  }
+  footer nav {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1201px) {
+  .header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .header #nome {
+    font-size: 2.4em;
+  }
+  .header a {
+    font-size: 1.2em;
+  }
+  .core {
+    display: block;
+    max-width: 60%;
+  }
+  .core .about .descrizione p {
+    font-size: 1.5em;
+  }
+  .core section h2 {
+    font-size: 1.9em;
+  }
+  .core .skills span, .core .progetti span, .core .contatti span {
+    font-size: 1.2em;
+  }
+  .core .contatti p {
+    font-size: 1.3em;
+  }
+  .core .contatti .buttons {
+    width: 48%;
+  }
+  footer p {
+    font-size: 0.9em;
+    margin-right: 450px;
+  }
+  footer nav {
+    margin-right: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */

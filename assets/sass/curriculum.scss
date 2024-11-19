@@ -1,0 +1,127 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+$primary-color : rgb(35,35,35);
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-color;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.cv {
+  padding: 10px 20px;
+  background-color: white;
+}
+
+
+.informazioni-personali {
+  padding-top: 20px;
+
+  .profilo {
+    max-height: 120px;
+    max-width: 140px;
+    padding-left: 10px;
+  }
+
+  .generalita {
+    h1 {
+      font-size: 1.4em;
+    }
+
+    ul {
+      padding-left: 0px;
+    }
+
+    li {
+      list-style-type:none ;
+      img {
+        max-width: 12px;
+      }
+      span {
+        font-size: 0.9em;
+      }
+
+      a {
+        @extend span;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.lavoro {
+  h2 {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    border-width: 50%;
+  }
+}
+
+.titolo {
+  margin-top: 10px;
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.istruzione {
+  @extend .lavoro;
+  @extend .titolo;
+}
+
+.competenze {
+  @extend .lavoro;
+
+  div {
+    margin-left:20px;
+
+    li {
+      font-size: 0.9em;
+      list-style-type: square;
+    }
+  }
+}
+
+.lingue {
+  h2 {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+  td {
+    font-size: 14px;
+  }
+  
+}
+
+.autorizzazione {
+  margin-top: 40px;
+  p {
+    width: 50%;
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width:577px) {
+  .cv {
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+  }
+}

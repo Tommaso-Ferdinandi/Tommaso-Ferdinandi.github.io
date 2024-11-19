@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-style: "Roboto", sans-serif;
+  background-color: rgb(30, 30, 30);
+  width: 100vw;
+  padding-top: 25px;
+  overflow-x: hidden;
+}
+
+form {
+  margin: 60px 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  padding: 15px 30px;
+}
+
+legend {
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  color: rgb(30, 30, 30);
+}
+
+.row, #radio, textarea {
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+  padding-left: 5px;
+  max-width: 300px;
+  min-height: 150px;
+}
+
+.btn {
+  margin: 0px 20px 0px 10px;
+}/*# sourceMappingURL=form.css.map */
