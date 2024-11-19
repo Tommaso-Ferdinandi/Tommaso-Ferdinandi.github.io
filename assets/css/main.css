@@ -86,7 +86,6 @@ body {
   width: 100%;
   justify-content: center;
   padding: 190px 10px 50px 10px;
-  font-size: 1.1em;
   align-items: center;
   font-style: italic;
   border-bottom: 2px solid rgb(35, 35, 35);
@@ -102,6 +101,7 @@ body {
 }
 .about .descrizione {
   margin-left: 10px;
+  font-size: 1.1em;
 }
 
 .skills, .contatti, .progetti {
@@ -167,7 +167,7 @@ section h2 {
 }
 .contatti .buttons {
   display: flex;
-  width: 55%;
+  width: 65%;
   justify-content: space-around;
 }
 .contatti a:hover {
@@ -190,7 +190,6 @@ footer {
 footer p {
   width: 40%;
   font-size: 0.6em;
-  text-align: center;
 }
 footer nav {
   margin: 0px 30px 20px 0px;
@@ -271,11 +270,12 @@ footer nav a {
   .core .contatti a {
     font-size: 1.2em;
   }
-  footer p {
+  .footer p {
+    margin-left: 100px;
     font-size: 0.8em;
     margin-right: 300px;
   }
-  footer nav {
+  .footer nav {
     margin-right: 100px;
   }
 }
