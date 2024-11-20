@@ -244,6 +244,13 @@ footer {
   }
 }
 
+// modifiche per smartphone 
+@media (max-width: 576px) {
+  .buttons {
+    width: 75%;
+  }
+}
+
 // modifiche per schermi > md
 @media (min-width: 769px){
   .header {

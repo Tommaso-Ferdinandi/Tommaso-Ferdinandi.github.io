@@ -201,6 +201,11 @@ footer nav a {
   text-decoration: none;
 }
 
+@media (max-width: 576px) {
+  .buttons {
+    width: 75%;
+  }
+}
 @media (min-width: 769px) {
   .header {
     display: flex;
