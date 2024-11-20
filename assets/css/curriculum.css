@@ -89,7 +89,7 @@ body {
   font-size: 0.6em;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 576px) {
   .cv {
     margin: 20px auto;
     border-radius: 15px;
