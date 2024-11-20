@@ -5,6 +5,7 @@
 }
 
 $primary-color : rgb(35,35,35);
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: $primary-color;
@@ -29,7 +30,7 @@ body {
 
   .generalita {
     h1 {
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
 
     ul {
@@ -42,7 +43,7 @@ body {
         max-width: 12px;
       }
       span {
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
 
       a {
@@ -117,11 +118,24 @@ body {
   }
 }
 
+// modifiche per schermi sm
 @media (min-width:577px) {
   .cv {
     margin: 20px auto;
     border-radius: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
+  }
+
+  .informazioni-personali {
+    .generalita {
+      h1 {
+        font-size: 1.4em;
+      }
+
+      span {
+        font-size: 0.9em;
+      }
+    }
   }
 }

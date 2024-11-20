@@ -25,7 +25,7 @@ body {
   padding-left: 10px;
 }
 .informazioni-personali .generalita h1 {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .informazioni-personali .generalita ul {
   padding-left: 0px;
@@ -37,7 +37,7 @@ body {
   max-width: 12px;
 }
 .informazioni-personali .generalita li span, .informazioni-personali .generalita li a {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 .informazioni-personali .generalita li a {
   text-decoration: none;
@@ -96,5 +96,11 @@ body {
     border-radius: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
+  }
+  .informazioni-personali .generalita h1 {
+    font-size: 1.4em;
+  }
+  .informazioni-personali .generalita span, .informazioni-personali .generalita li a {
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=curriculum.css.map */
