@@ -97,8 +97,8 @@ body {
     box-shadow: 5px 5px 5px black;
   }
   .informazioni-personali .profilo {
-    max-height: 120px;
-    max-width: 140px;
+    max-height: 140px;
+    max-width: 160px;
   }
   .informazioni-personali .generalita h1 {
     font-size: 1.4em;

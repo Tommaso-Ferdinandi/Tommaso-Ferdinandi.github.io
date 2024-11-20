@@ -246,8 +246,14 @@ footer {
 
 // modifiche per smartphone 
 @media (max-width: 576px) {
-  .buttons {
-    width: 80%;
+
+  .about {
+    align-items: flex-start;
+  }
+  .contatti {
+    .buttons {
+      width: 80%; /*had to make it for smartphone, they are smaller than the smallest chrome window on pc*/
+    }
   }
 }
 
