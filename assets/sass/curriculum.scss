@@ -38,6 +38,7 @@ body {
 
     li {
       list-style-type:none ;
+      
       img {
         max-width: 12px;
       }
@@ -117,8 +118,8 @@ body {
   }
 }
 
-// modifiche per schermi sm
-@media (min-width:577px) {
+// modifiche per schermi > sm
+@media (min-width:50px) {
   .cv {
     margin: 20px auto;
     border-radius: 15px;
@@ -134,10 +135,6 @@ body {
     .generalita {
       h1 {
         font-size: 1.4em;
-      }
-
-      span {
-        font-size: 0.9em;
       }
     }
   }

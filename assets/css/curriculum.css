@@ -89,7 +89,7 @@ body {
   font-size: 0.6em;
 }
 
-@media (min-width: 577px) {
+@media (min-width: 50px) {
   .cv {
     margin: 20px auto;
     border-radius: 15px;
@@ -102,8 +102,5 @@ body {
   }
   .informazioni-personali .generalita h1 {
     font-size: 1.4em;
-  }
-  .informazioni-personali .generalita span, .informazioni-personali .generalita li a {
-    font-size: 0.9em;
   }
 }/*# sourceMappingURL=curriculum.css.map */
