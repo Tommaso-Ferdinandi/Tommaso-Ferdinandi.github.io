@@ -19,8 +19,8 @@ body {
   padding-top: 20px;
 }
 .informazioni-personali .profilo {
-  max-height: 90px; /*dovuto farlo per gli smartphone*/
-  max-width: 110px;
+  max-height: 140px;
+  max-width: 160px;
   padding-left: 10px;
 }
 .informazioni-personali .generalita h1 {
@@ -89,16 +89,12 @@ body {
   font-size: 0.6em;
 }
 
-@media (min-width: 50px) {
+@media (min-width: 550px) {
   .cv {
     margin: 20px auto;
     border-radius: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
-  }
-  .informazioni-personali .profilo {
-    max-height: 140px;
-    max-width: 160px;
   }
   .informazioni-personali .generalita h1 {
     font-size: 1.4em;

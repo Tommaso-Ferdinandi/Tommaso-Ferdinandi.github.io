@@ -22,8 +22,8 @@ body {
   padding-top: 20px;
 
   .profilo {
-    max-height: 90px; /*dovuto farlo per gli smartphone*/
-    max-width: 110px;
+    max-height: 140px;
+    max-width: 160px;
     padding-left: 10px;
   }
 
@@ -119,7 +119,7 @@ body {
 }
 
 // modifiche per schermi > sm
-@media (min-width:50px) {
+@media (min-width:550px) {
   .cv {
     margin: 20px auto;
     border-radius: 15px;
@@ -128,10 +128,6 @@ body {
   }
 
   .informazioni-personali {
-    .profilo {
-      max-height: 140px;
-      max-width: 160px;
-    }
     .generalita {
       h1 {
         font-size: 1.4em;
