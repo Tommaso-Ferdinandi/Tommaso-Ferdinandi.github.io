@@ -255,6 +255,16 @@ footer {
       width: 80%; /*had to make it for smartphone, they are smaller than the smallest chrome window on pc*/
     }
   }
+
+  footer {
+    justify-content: space-between;
+    p {
+      margin-left: 20px;
+    }
+    nav {
+      margin-right: 20px;
+    }
+  }
 }
 
 // modifiche per schermi > md

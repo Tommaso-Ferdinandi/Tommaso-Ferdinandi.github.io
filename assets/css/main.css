@@ -208,6 +208,15 @@ footer nav a {
   .contatti .buttons {
     width: 80%; /*had to make it for smartphone, they are smaller than the smallest chrome window on pc*/
   }
+  footer {
+    justify-content: space-between;
+  }
+  footer p {
+    margin-left: 20px;
+  }
+  footer nav {
+    margin-right: 20px;
+  }
 }
 @media (min-width: 769px) {
   .header {
