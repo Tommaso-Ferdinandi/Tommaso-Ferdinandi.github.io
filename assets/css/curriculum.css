@@ -19,8 +19,8 @@ body {
   padding-top: 20px;
 }
 .informazioni-personali .profilo {
-  max-height: 100px;
-  max-width: 120px;
+  max-height: 90px; /*had to make it for smartphone*/
+  max-width: 110px;
   padding-left: 10px;
 }
 .informazioni-personali .generalita h1 {
