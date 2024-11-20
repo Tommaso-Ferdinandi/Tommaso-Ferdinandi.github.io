@@ -22,14 +22,14 @@ body {
   padding-top: 20px;
 
   .profilo {
-    max-height: 110px;
-    max-width: 140px;
-    padding-left: 20px;
+    max-height: 100px;
+    max-width: 120px;
+    padding-left: 10px;
   }
 
   .generalita {
     h1 {
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
 
     ul {
@@ -42,7 +42,7 @@ body {
         max-width: 12px;
       }
       span {
-        font-size: 0.8em;
+        font-size: 0.9em;
       }
 
       a {
@@ -127,6 +127,10 @@ body {
   }
 
   .informazioni-personali {
+    .profilo {
+      max-height: 120px;
+      max-width: 140px;
+    }
     .generalita {
       h1 {
         font-size: 1.4em;
