@@ -252,7 +252,7 @@ footer {
   }
   .contatti {
     .buttons {
-      width: 80%; /*had to make it for smartphone, they are smaller than the smallest chrome window on pc*/
+      width: 80%; /*dovuto farlo per gli smartphone, la finestra piu piccola di chrome su pc è piu grande del classico smartphone*/
     }
   }
 
@@ -263,6 +263,10 @@ footer {
     }
     nav {
       margin-right: 20px;
+
+      a {
+        padding: 0px;
+      }
     }
   }
 }

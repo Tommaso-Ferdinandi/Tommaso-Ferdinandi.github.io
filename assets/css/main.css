@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -206,7 +207,7 @@ footer nav a {
     align-items: flex-start;
   }
   .contatti .buttons {
-    width: 80%; /*had to make it for smartphone, they are smaller than the smallest chrome window on pc*/
+    width: 80%; /*dovuto farlo per gli smartphone, la finestra piu piccola di chrome su pc è piu grande del classico smartphone*/
   }
   footer {
     justify-content: space-between;
@@ -216,6 +217,9 @@ footer nav a {
   }
   footer nav {
     margin-right: 20px;
+  }
+  footer nav a {
+    padding: 0px;
   }
 }
 @media (min-width: 769px) {
