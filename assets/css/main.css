@@ -203,7 +203,7 @@ footer nav a {
 
 @media (max-width: 576px) {
   .buttons {
-    width: 75%;
+    width: 80%;
   }
 }
 @media (min-width: 769px) {
