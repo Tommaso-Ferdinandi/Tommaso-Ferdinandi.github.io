@@ -12,7 +12,7 @@ function sendMail(event){
       modalitaValue = radios[i].value;
       break
     }
-  }
+  };
 
   // parametri form
   var params = {
