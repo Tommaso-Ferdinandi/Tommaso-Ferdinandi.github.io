@@ -8,7 +8,7 @@ Spero il sito vi piaccia, a presto !!
 
 Per tutti coloro che sono interessati invece al codice vero proprio vi lascio qui una piccola spiegazione per capirne meglio la struttura.
 Directory progetto:
--  git ( github repository )
+-  .git ( github repository )
 -  assets ( tutti i file accessori agli html )
     - css ( stile )
     - images ( immagini icone etc. )
@@ -19,3 +19,4 @@ Directory progetto:
 - form
     - form.html ( pagina per contattarmi )  
 - index.html ( homepage sito )
+- README.md ( descrizione progetto)

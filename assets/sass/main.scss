@@ -250,6 +250,11 @@ footer {
 
 // modifiche per smartphone 
 @media (max-width: 576px) {
+  header {
+    .nome {
+      font-size: 1.8em;
+    }
+  }
   .about {
     align-items: flex-start;
   }
