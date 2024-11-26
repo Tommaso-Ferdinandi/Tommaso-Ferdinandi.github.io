@@ -36,6 +36,9 @@ legend {
 .row, #radio, textarea {
   margin-bottom: 20px;
 }
+.row label, #radio label, textarea label {
+  padding-right: 5px;
+}
 
 textarea {
   margin-top: 10px;
