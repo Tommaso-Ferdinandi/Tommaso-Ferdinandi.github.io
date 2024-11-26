@@ -22,12 +22,16 @@ body {
 }
 
 // logo e icona menu
-#nome {
-  text-decoration: none;
-  color: white;
+.nome {
   font-size: 2em;
   padding-left: 10px;
   float: left;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .menu-btn {
@@ -246,12 +250,6 @@ footer {
 
 // modifiche per smartphone 
 @media (max-width: 576px) {
-
-  .header {
-    #nome {
-      font-size: 1.7em;
-    }
-  }
   .about {
     align-items: flex-start;
   }
@@ -333,7 +331,7 @@ footer {
   .header{
     padding-left: 40px;
     padding-right: 40px;
-    #nome {
+    .nome  {
       font-size: 2.2em;
     }
 
@@ -386,7 +384,7 @@ footer {
   .header{
     padding-left: 60px;
     padding-right: 60px;
-    #nome {
+    .nome  {
       font-size: 2.4em;
     }
 

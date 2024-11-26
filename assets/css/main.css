@@ -17,12 +17,15 @@ body {
   width: 100%;
 }
 
-#nome {
-  text-decoration: none;
-  color: white;
+.nome {
   font-size: 2em;
   padding-left: 10px;
   float: left;
+  font-weight: 400;
+}
+.nome a {
+  text-decoration: none;
+  color: white;
 }
 
 .menu-btn {
@@ -203,9 +206,6 @@ footer nav a {
 }
 
 @media (max-width: 576px) {
-  .header #nome {
-    font-size: 1.7em;
-  }
   .about {
     align-items: flex-start;
   }
@@ -269,7 +269,7 @@ footer nav a {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .header #nome {
+  .header .nome {
     font-size: 2.2em;
   }
   .header a {
@@ -308,7 +308,7 @@ footer nav a {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .header #nome {
+  .header .nome {
     font-size: 2.4em;
   }
   .header a {

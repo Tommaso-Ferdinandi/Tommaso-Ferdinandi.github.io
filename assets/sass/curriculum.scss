@@ -22,8 +22,8 @@ body {
   padding-top: 20px;
 
   .profilo {
-    max-height: 140px;
-    max-width: 160px;
+    max-height: 120px;
+    max-width: 140px;
     padding-left: 10px;
   }
 
@@ -43,7 +43,7 @@ body {
         max-width: 12px;
       }
       span {
-        font-size: 0.6em;
+        font-size: 0.7em;
       }
 
       a {
@@ -128,6 +128,10 @@ body {
   }
 
   .informazioni-personali {
+    .profilo {
+      max-width: 160px;
+      max-height: 140px;
+    }
     .generalita {
       h1 {
         font-size: 1.4em;

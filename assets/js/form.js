@@ -4,6 +4,10 @@ function sendMail(event){
 
   event.preventDefault();  /*Prevenire crash di default*/
 
+  emailjs.init({
+    publicKey: "Ml6LWDsC0Gnrhw1JW",
+  });
+
   // ciclo for per selezionare valore radio buttons
   var modalitaValue = "";
   var radios = document.getElementsByName("modalita");
