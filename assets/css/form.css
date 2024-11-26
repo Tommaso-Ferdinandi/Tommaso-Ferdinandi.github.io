@@ -48,21 +48,21 @@ textarea {
 }
 
 @media (max-width: 400px) {
-  form {
-    margin: 30px 0px;
+  body {
+    background-color: white;
+    padding: 0px;
   }
-  fieldset {
-    padding: 10px 10px;
-  }
-}
-@media (max-width: 360px) {
   main {
     width: 100% !important;
   }
   form {
     box-shadow: none;
+    border-radius: 0%;
+    border-top: 10px solid rgb(30, 30, 30);
+    border-bottom: 10px solid rgb(30, 30, 30);
+    margin: 0px;
   }
-  form fieldset {
+  fieldset {
     padding: 10px 20px;
   }
 }

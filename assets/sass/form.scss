@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 } 
 
-
 form { 
   margin: 60px 0px;
   background-color: white;
@@ -58,26 +57,25 @@ textarea {
 
 // modifiche per smartphone piccoli
 @media (max-width:400px) {
-  form {
-    margin: 30px 0px;
+  body {
+    background-color: white;
+    padding:0px;
   }
-  fieldset {
-    padding: 10px 10px;
-  }
-}
-// modifiche per smartphone molto piccoli o foldable
-@media (max-width:360px) {
   main {
     width: 100% !important;
   }
   form {
     box-shadow: none;
-
-    fieldset {
-      padding: 10px 20px;
-    }
+    border-radius: 0%;
+    border-top: 10px solid $primary-color;
+    border-bottom: 10px solid $primary-color;
+    margin: 0px;
+  }
+  fieldset {
+    padding: 10px 20px;
   }
 }
+
 // modifiche per schermi > sm 
 @media (min-width:576px) {
   fieldset {
