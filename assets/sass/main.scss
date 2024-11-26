@@ -248,7 +248,8 @@ footer {
   }
 }
 
-// modifiche per smartphone 
+
+// modifiche per smartphone in generale o grandi
 @media (max-width: 576px) {
   header {
     .nome {
@@ -258,9 +259,17 @@ footer {
   .about {
     align-items: flex-start;
   }
+  .progetti {
+    .card {
+      img {
+        max-height: 150px;
+        max-width: 150px;
+      }
+    }
+  }
   .contatti {
     .buttons {
-      width: 80%; /*dovuto farlo per gli smartphone, la finestra piu piccola di chrome su pc è piu grande del classico smartphone*/
+      width: 80%;
     }
   }
 
@@ -279,8 +288,37 @@ footer {
   }
 }
 
+// modifiche per smartphone piccoli
+@media (max-width: 400px) {
+  header {
+    .nome {
+      font-size: 1.6em;
+    }
+  }
+  .contatti {
+    .buttons {
+      width: 85%;
+    }
+  }
+}
+
+// modifiche smartphone molto piccoli o foldable
+@media (max-width: 350px) {
+  header {
+    .nome {
+      font-size: 1.5em;
+    }
+  }
+  footer {
+    p,nav {
+      margin:0px;
+      min-width: 100px;
+    }
+  }
+}
+
 // modifiche per schermi > md
-@media (min-width: 769px){
+@media (min-width: 768px){
   .header {
     display: flex;
     justify-content: space-between;
