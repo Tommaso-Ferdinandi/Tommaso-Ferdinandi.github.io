@@ -58,10 +58,7 @@ textarea {
   form {
     box-shadow: none;
     border-radius: 0%;
-    margin: 0px;
-  }
-  fieldset {
-    padding: 10px 20px;
+    margin: 10px;
   }
 }
 @media (min-width: 576px) {
