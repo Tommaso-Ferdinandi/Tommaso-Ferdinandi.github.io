@@ -15,6 +15,7 @@ body {
 .cv {
   padding: 10px 20px;
   background-color: white;
+  margin: auto;
 }
 
 
@@ -22,8 +23,8 @@ body {
   padding-top: 20px;
 
   .profilo {
-    max-height: 120px;
-    max-width: 140px;
+    max-height: 140px;
+    max-width: 160px;
     padding-left: 10px;
   }
 
@@ -118,20 +119,43 @@ body {
   }
 }
 
+
+// modifiche per smartphone piccoli
+@media (max-width:400px) {
+  .informazioni-personali {
+    .profilo {
+      max-height: 120px;
+      max-width: 140px;
+    }
+    .generalita li {
+      font-size: 0.8em;
+    }
+  }
+}
+
+// modifiche per smartphone foldable o molto piccoli
+@media (max-width:350px) {
+  .informazioni-personali {
+    .profilo {
+      max-height: 110px;
+      max-width: 130px;
+    }
+    .generalita li {
+      font-size: 0.7em;
+    }
+  }
+}
+
 // modifiche per schermi > sm
 @media (min-width:576px) {
   .cv {
-    margin: 20px auto;
+    margin: 30px auto;
     border-radius: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
   }
 
   .informazioni-personali {
-    .profilo {
-      max-width: 160px;
-      max-height: 140px;
-    }
     .generalita {
       h1 {
         font-size: 1.4em;
@@ -139,7 +163,7 @@ body {
 
       li {
         span{
-          font-size: 0.7em;
+          font-size: 0.8em;
         }
       }
     }

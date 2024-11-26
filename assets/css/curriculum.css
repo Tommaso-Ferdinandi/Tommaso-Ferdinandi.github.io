@@ -13,14 +13,15 @@ body {
 .cv {
   padding: 10px 20px;
   background-color: white;
+  margin: auto;
 }
 
 .informazioni-personali {
   padding-top: 20px;
 }
 .informazioni-personali .profilo {
-  max-height: 120px;
-  max-width: 140px;
+  max-height: 140px;
+  max-width: 160px;
   padding-left: 10px;
 }
 .informazioni-personali .generalita h1 {
@@ -89,21 +90,35 @@ body {
   font-size: 0.6em;
 }
 
+@media (max-width: 400px) {
+  .informazioni-personali .profilo {
+    max-height: 120px;
+    max-width: 140px;
+  }
+  .informazioni-personali .generalita li {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 350px) {
+  .informazioni-personali .profilo {
+    max-height: 110px;
+    max-width: 130px;
+  }
+  .informazioni-personali .generalita li {
+    font-size: 0.7em;
+  }
+}
 @media (min-width: 576px) {
   .cv {
-    margin: 20px auto;
+    margin: 30px auto;
     border-radius: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
-  }
-  .informazioni-personali .profilo {
-    max-width: 160px;
-    max-height: 140px;
   }
   .informazioni-personali .generalita h1 {
     font-size: 1.4em;
   }
   .informazioni-personali .generalita li span, .informazioni-personali .generalita li a {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }/*# sourceMappingURL=curriculum.css.map */
