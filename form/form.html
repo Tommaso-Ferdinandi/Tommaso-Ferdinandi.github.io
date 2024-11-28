@@ -30,37 +30,37 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
-<body class="row">
-  <main class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4  container">
+<body>
+  <main>
     <!-- form -->
     <form id="contattami" method="post" action="https://api.emailjs.com/api/v1.0/email/send">
       <!-- riquadro del form -->
       <fieldset form="contattami">
         <legend> Contattami </legend>
         <!-- nome -->
-        <div class="row">
-          <label class="col-3" for="nome"> Nome </label>
-          <input class="col-7"type="text" id="nome" name="nome" required>
+        <div class="riga">
+          <label class="etichetta" for="nome"> Nome </label>
+          <input class="dati"type="text" id="nome" name="nome" required>
         </div>
         <!-- cognome -->
-        <div class="row">
-          <label class="col-3" for="cognome"> Cognome </label>
-          <input class="col-7"type="text" id="cognome" name="cognome" required>
+        <div class="riga">
+          <label class="etichetta" for="cognome"> Cognome </label>
+          <input class="dati"type="text" id="cognome" name="cognome" required>
         </div>
         <!-- azienda -->
-        <div class="row">
-          <label class="col-3" for="azienda"> Azienda </label>
-          <input class="col-7"type="text" id="azienda" name="azienda">
+        <div class="riga">
+          <label class="etichetta" for="azienda"> Azienda </label>
+          <input class="dati"type="text" id="azienda" name="azienda">
         </div>
         <!-- email -->
-        <div class="row">
-          <label class="col-3" for="email"> E-mail </label>
-          <input class="col-7"type="email" id="email" name="email" required placeholder="esempio@gmail.com">
+        <div class="riga">
+          <label class="etichetta" for="email"> E-mail </label>
+          <input class="dati"type="email" id="email" name="email" required placeholder="esempio@gmail.com">
         </div>
         <!-- motivo -->
-        <div class="row">
-          <label class="col-3" for="motivo">Motivo</label>
-          <select class="col-7" name="motivo" id="motivo">
+        <div class="riga">
+          <label class="etichetta" for="motivo">Motivo</label>
+          <select class="dati" name="motivo" id="motivo">
             <option value="option">-</option>
             <option value="consulenza">Consulenza</option>
             <option value="offerta-lavoro">Offerta di lavoro</option>
@@ -68,7 +68,7 @@
           </select>
         </div>
         <!-- opzioni lavoro -->
-        <div id="radio" class="radio">
+        <div class="radio">
           <input type="radio" name="modalita" id="remoto" value="remoto">
           <label for="remoto">Remoto</label>
           <input type="radio" name="modalita" id="presenza" value="presenza">
@@ -80,9 +80,9 @@
         <label for="messaggio">Lascia un messaggio</label>
         <textarea name="messaggio" id="messaggio" maxlength="500" placeholder="Scrivi qui.." required></textarea>
         <!-- submit -->
-         <div class="row">
-          <button id="submit" type="submit" class="col-4 btn btn-dark">Invia</button>
-          <button type="reset" class=" col-4 btn btn-light">Reimposta</button>
+         <div class="riga riga-btn">
+          <button id="submit" type="submit" class="pulsante">Invia</button>
+          <button id="reset" type="reset" class="pulsante">Reimposta</button>
          </div>
       </fieldset>
     </form>

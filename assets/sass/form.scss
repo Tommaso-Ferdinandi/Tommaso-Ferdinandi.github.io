@@ -5,6 +5,8 @@
 }
 
 $primary-color: rgb(30,30,30);
+$secondary-color: rgb(50,50,50);
+$third-color : rgb(140,140,140);
 
 body {
   font-style: "Roboto", sans-serif;
@@ -12,6 +14,11 @@ body {
   padding-top: 25px;
   overflow-x: hidden;
 } 
+
+main {
+  width: 93.5%;
+  margin: 0px auto;
+}
 
 form { 
   margin: 60px 0px;
@@ -34,25 +41,73 @@ legend {
   color: $primary-color;
 }
 
-.row {
+.riga {
   margin-bottom: 20px;
+  display: flex;
+
+  .etichetta {
+    width: 25.5%;
+  }
+
+  .dati {
+    width: 59.5%;
+    padding-left: 5px;
+  }
+}
+
+.radio {
+  @extend .riga;
+
+  label {
+    margin-left: 3px;
+    margin-right: 10px;
+  }
 }
 
 textarea {
-  @extend .row;
   margin-top: 10px;
+  margin-bottom: 30px;
   padding-left: 5px;
-  max-width: 380px;
+  max-width: 320px;
   min-height: 150px;
 }
 
-#radio {
-  @extend .row;
-}
+.riga-btn {
 
-.btn {
-  @extend .row;
-  margin: 0px 20px 0px 10px;
+  #submit {
+    width: 34%;
+    background-color: $primary-color;
+    color:white;
+    padding: 6px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    margin-right:20px;
+    font-size: 17px;
+  }
+  
+  #submit:hover {
+    background-color: $secondary-color ;
+  }
+  
+  #submit:active {
+    background-color: $third-color;
+  }
+  
+  #reset {
+    width: 34%;
+    background-color: white;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  
+  #reset:hover {
+    border-color: $secondary-color ;
+  }
+  
+  #reset:active {
+    border-color: $third-color;
+  }
 }
 
 
@@ -63,25 +118,41 @@ textarea {
     padding: 20px 0px;
   }
   main {
-    width: 100% !important;
+    width: 100%;
   }
   form {
     box-shadow: none;
     border-radius: 0%;
     margin: 10px;
   }
+textarea {
+  max-width: 290px;
+}
+
 }
 
 // modifiche per smartphone molto piccoli o foldable
 @media (max-width:361px) {
-  .row {
-    font-size: 13px;
+  label, #email, #messaggio {
+    font-size: 15px;
   }
+  textarea {
+    max-width: 245px;
   }
+
+  .riga-btn {
+    #reset, #submit {
+      font-size: 15px;
+    }
+  }
+}
 
 
 // modifiche per schermi > sm 
 @media (min-width:576px) {
+  main {
+    width: 77.5%;
+  }
   fieldset {
     padding: 15px 25px;
   }
@@ -89,7 +160,32 @@ textarea {
 
 // modifiche per schermi > md 
 @media (min-width:768px) {
+
+  main {
+    width: 59.5%;
+  }
   fieldset {
     padding: 15px 30px;
+  }
+}
+
+// modifiche per schermi > lg 
+@media (min-width:992px) {
+  main {
+    width: 51%;
+  }
+}
+
+// modifiche per schermi > xl 
+@media (min-width:1200px) {
+  main {
+    width: 42.5%;
+  }
+}
+
+// modifiche per schermi > xxl 
+@media (min-width:1400px) {
+  main {
+    width: 34%;
   }
 }

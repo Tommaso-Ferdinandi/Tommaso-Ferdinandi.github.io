@@ -172,6 +172,9 @@ section h2 {
   padding: 10px;
   text-align: center;
 }
+.progetti .card .button {
+  margin-bottom: 100px;
+}
 .progetti .card-2 {
   display: none;
 }
