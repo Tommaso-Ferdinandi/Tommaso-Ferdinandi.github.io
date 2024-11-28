@@ -8,6 +8,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.button {
+  background-color: rgb(35, 35, 35);
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.button:active {
+  background-color: rgb(140, 140, 140);
+}
+
 .header {
   background-color: rgb(35, 35, 35);
   padding: 50px 20px;
@@ -128,7 +146,12 @@ body {
 .skills-livello .progress .progress-bar {
   background-color: rgb(35, 35, 35);
 }
-
+.skills-livello .progress #html, .skills-livello .progress #css {
+  width: 70%;
+}
+.skills-livello .progress #bootstrap, .skills-livello .progress #github, .skills-livello .progress #sass {
+  width: 50%;
+}
 section h2 {
   text-align: center;
   padding-bottom: 30px;
@@ -149,15 +172,8 @@ section h2 {
   padding: 10px;
   text-align: center;
 }
-.progetti .card a {
-  background-color: rgb(35, 35, 35);
-  margin-right: 10px;
-}
-.progetti .card a:hover {
-  background-color: rgb(35, 35, 35);
-}
-.progetti .card a:active {
-  background-color: rgb(35, 35, 35);
+.progetti .card-2 {
+  display: none;
 }
 
 .contatti {
@@ -168,16 +184,10 @@ section h2 {
   margin-bottom: 30px;
   text-align: center;
 }
-.contatti .buttons {
+.contatti .nav-buttons {
   display: flex;
   width: 65%;
   justify-content: space-around;
-}
-.contatti a:hover {
-  background-color: rgb(35, 35, 35);
-}
-.contatti a:active {
-  background-color: rgb(35, 35, 35);
 }
 
 footer {
@@ -215,7 +225,7 @@ footer nav a {
     max-height: 150px;
     max-width: 150px;
   }
-  .contatti .buttons {
+  .contatti .nav-buttons {
     width: 80%;
   }
   footer {
@@ -235,11 +245,11 @@ footer nav a {
   header .nome {
     font-size: 1.6em;
   }
-  .contatti .buttons {
+  .contatti .nav-buttons {
     width: 85%;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 361px) {
   header .nome {
     font-size: 1.5em;
   }
@@ -278,6 +288,7 @@ footer nav a {
     font-size: 1em;
   }
   .core .card-2 {
+    display: block;
     margin-left: 40px;
   }
   .core .contatti p {
@@ -353,7 +364,7 @@ footer nav a {
   .core .contatti p {
     font-size: 1.3em;
   }
-  .core .contatti .buttons {
+  .core .contatti .nav-buttons {
     width: 48%;
   }
   footer p {

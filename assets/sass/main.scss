@@ -12,6 +12,25 @@ body {
   font-family: "Roboto", sans-serif ;
 }
 
+// stile per ogni button
+.button {
+  background-color: $primary-color;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: $secondary-color;
+}
+
+.button:active {
+  background-color: $third-color;
+}
+
 // stile generale header
 .header {
   background-color: $primary-color;
@@ -150,6 +169,26 @@ body {
     .progress-bar {
       background-color: $primary-color;
     }
+
+    #html {
+      width: 70%;
+    }
+
+    #css {
+      @extend #html;
+    }
+
+    #bootstrap {
+      width: 50%;
+    }
+
+    #sass {
+      @extend #bootstrap;
+    }
+
+    #github {
+      @extend #bootstrap;
+    }
   }
 }
 
@@ -178,19 +217,9 @@ section {
       padding: 10px;
       text-align: center;
     }
-
-    a {
-      background-color: $primary-color;
-      margin-right: 10px;
-    }
-
-    a:hover {
-      background-color: $primary-color;
-    }
-
-    a:active {
-      background-color: $primary-color;
-    }
+  }
+  .card-2 {
+    display: none;
   }
 }
 
@@ -204,20 +233,11 @@ section {
     text-align: center;
   }
 
-  .buttons {
+  .nav-buttons {
     display: flex;
     width: 65%;
     justify-content: space-around;
-  }
-
-  a:hover {
-    background-color:$primary-color;
-  }
-
-  a:active {
-    background-color: $primary-color;
-  }
-  
+  }  
 }
 
 // sezione social con link esterni
@@ -268,7 +288,7 @@ footer {
     }
   }
   .contatti {
-    .buttons {
+    .nav-buttons {
       width: 80%;
     }
   }
@@ -296,14 +316,14 @@ footer {
     }
   }
   .contatti {
-    .buttons {
+    .nav-buttons {
       width: 85%;
     }
   }
 }
 
 // modifiche smartphone molto piccoli o foldable
-@media (max-width: 350px) {
+@media (max-width: 361px) {
   header {
     .nome {
       font-size: 1.5em;
@@ -354,6 +374,7 @@ footer {
     }
   
     .card-2 {
+      display: block;
       margin-left: 40px;
     }
   
@@ -457,7 +478,7 @@ footer {
       font-size: 1.3em;
        }
 
-       .buttons {
+       .nav-buttons {
         width: 48%;
        }
     }
