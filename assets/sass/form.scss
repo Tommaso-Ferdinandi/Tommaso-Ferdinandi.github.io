@@ -51,6 +51,7 @@ textarea {
 }
 
 .btn {
+  @extend .row;
   margin: 0px 20px 0px 10px;
 }
 
@@ -59,7 +60,7 @@ textarea {
 @media (max-width:400px) {
   body {
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px;
   }
   main {
     width: 100% !important;
@@ -70,6 +71,14 @@ textarea {
     margin: 10px;
   }
 }
+
+// modifiche per smartphone molto piccoli o foldable
+@media (max-width:361px) {
+  .row {
+    font-size: 13px;
+  }
+  }
+
 
 // modifiche per schermi > sm 
 @media (min-width:576px) {

@@ -32,7 +32,7 @@ legend {
   color: rgb(30, 30, 30);
 }
 
-.row, #radio, textarea {
+.row, .btn, #radio, textarea {
   margin-bottom: 20px;
 }
 
@@ -50,7 +50,7 @@ textarea {
 @media (max-width: 400px) {
   body {
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px;
   }
   main {
     width: 100% !important;
@@ -59,6 +59,11 @@ textarea {
     box-shadow: none;
     border-radius: 0%;
     margin: 10px;
+  }
+}
+@media (max-width: 361px) {
+  .row, textarea, #radio, .btn {
+    font-size: 13px;
   }
 }
 @media (min-width: 576px) {
