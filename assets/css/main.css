@@ -165,15 +165,13 @@ section h2 {
   width: 60%;
   border: 2px solid gray;
   box-shadow: 5px 5px 5px gray;
+  padding-bottom: 10px;
 }
 .progetti .card img {
   max-width: 200px;
   max-height: 200px;
   padding: 10px;
   text-align: center;
-}
-.progetti .card .button {
-  margin-bottom: 100px;
 }
 .progetti .card-2 {
   display: none;

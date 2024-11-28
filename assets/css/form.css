@@ -145,6 +145,9 @@ textarea {
   main {
     width: 42.5%;
   }
+  fieldset {
+    padding: 15px 45px;
+  }
 }
 @media (min-width: 1400px) {
   main {

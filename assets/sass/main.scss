@@ -210,6 +210,7 @@ section {
     width:60%;
     border: 2px solid gray;
     box-shadow: 5px 5px 5px gray;
+    padding-bottom: 10px;
 
     img {
       max-width: 200px;
@@ -218,9 +219,6 @@ section {
       text-align: center;
     }
     
-    .button {
-      margin-bottom: 100px;
-    }
   }
   .card-2 {
     display: none;
