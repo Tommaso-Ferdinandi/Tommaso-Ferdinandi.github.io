@@ -10,6 +10,10 @@ $third-color : rgb(140,140,140);
 
 body {
   font-family: "Roboto", sans-serif ;
+
+  p {
+    font-size: 16px;
+  }
 }
 
 // stile per ogni button
@@ -18,7 +22,7 @@ body {
   margin-right: 10px;
   color: white;
   text-decoration: none;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -42,7 +46,7 @@ body {
 
 // logo e icona menu
 .nome {
-  font-size: 2em;
+  font-size: 30px;
   padding-left: 10px;
   float: left;
   font-weight: 400;
@@ -126,18 +130,14 @@ body {
 // sezione bio con descrizione
 .about {
   display: flex;
-  width: 100%;
   justify-content: center;
-  padding: 200px 10px 50px 10px;
-  
   align-items: center;
-  font-style: italic;
+  padding: 200px 10px 50px 10px;
   border-bottom: 2px solid $primary-color;
 
   .foto-profilo {
     max-width: 30%;
     max-height: 30%;
-    float: left;
     margin-right: 5px;
     border-radius: 50%;
     border: 1px solid gray;
@@ -146,7 +146,16 @@ body {
   
   .descrizione {
     margin-left: 10px;
-    font-size: 1em;
+    font-style: italic;
+  }
+}
+
+// valido per ogni sezione
+section {
+  h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 25px;
   }
 }
 
@@ -163,7 +172,7 @@ body {
   width:90%;
 
   span {
-    font-size: 0.9em;
+    @extend p;
   }
 
   .progress {
@@ -196,13 +205,6 @@ body {
   }
 }
 
-section {
-  h2 {
-  text-align: center;
-  padding-bottom: 30px;
-  }
-}
-
 // sezione progetti con cards
 .progetti {
   @extend .skills;
@@ -216,14 +218,20 @@ section {
     box-shadow: 5px 5px 5px gray;
     line-height: 30px;
     padding-bottom: 10px;
+    line-height: 25px;
 
     img {
-      max-width: 200px;
-      max-height: 200px;
+      max-width: 150px;
+      max-height: 150px;
       padding: 10px;
       text-align: center;
     }
-    
+  }
+
+  .card-body {
+    h3{
+      font-size: 20px;
+    }
   }
   .card-2 {
     display: none;
@@ -237,12 +245,13 @@ section {
   min-height: 300px;
   p {
     margin-bottom: 30px;
+    width: 80%;
     text-align: center;
   }
 
   .nav-buttons {
     display: flex;
-    width: 65%;
+    width: 55%;
     justify-content: space-around;
   }  
 }
@@ -250,109 +259,80 @@ section {
 // sezione social con link esterni
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 50px 0px 25px 0px;
-  min-width: 100%;
   background-color: $primary-color;
   color: white;
   border: 2px solid $primary-color;
 
   p {
     width: 30%;
-    font-size: 0.6em;
+    font-size: 11px;
+    margin-left: 30px;
   }
 
   nav {
     margin: 0px 30px 20px 0px;
-    max-width: 20%;
-    max-height: 10%;
-    
     a {
-      padding: 5px;
+      padding: 0px;
       text-decoration: none;
-    }
-  }
-}
-
-
-// modifiche per smartphone in generale o grandi
-@media (max-width: 576px) {
-  header {
-    .nome {
-      font-size: 1.8em;
-    }
-  }
-  .about {
-    align-items: flex-start;
-  }
-  .progetti {
-    .card {
-      img {
-        max-height: 150px;
-        max-width: 150px;
-      }
-    }
-  }
-  .contatti {
-    .nav-buttons {
-      width: 80%;
-    }
-  }
-
-  footer {
-    justify-content: space-between;
-    p {
-      margin-left: 20px;
-    }
-    nav {
-      margin-right: 20px;
-
-      a {
-        padding: 0px;
-      }
     }
   }
 }
 
 // modifiche per smartphone piccoli
 @media (max-width: 400px) {
-  header {
-    .nome {
-      font-size: 1.6em;
-    }
+  body p{
+    font-size: 15px;
   }
-  .contatti {
-    .nav-buttons {
-      width: 85%;
-    }
+  .button {
+    font-size: 15px;
+  }
+  header .nome {
+      font-size: 27px;
+  }
+  section h2 {
+    font-size: 22px;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
+  
 
 // modifiche smartphone molto piccoli o foldable
 @media (max-width: 361px) {
-  .button{
-    padding: 10px;
+  header .nome {
+      font-size: 24px;
   }
-  header {
-    .nome {
-      font-size: 1.5em;
-    }
+  .about p {
+    font-size: 14px;
   }
-  footer {
-    p,nav {
-      margin:0px;
-      min-width: 100px;
-    }
+  footer p {
+    font-size: 9px;
   }
 }
 
 // modifiche per schermi > md
 @media (min-width: 768px){
+  .button {
+    padding: 10px 14px;
+    font-size: 17px;
+  }
+  body p {
+    font-size: 17px;
+  }
   .header {
     display: flex;
     justify-content: space-between;
     position: static;
+    align-items: center;
+
+    .nome {
+      font-size: 33px;
+    }
+
     .menu-icon {
       display: none;
     }
@@ -369,48 +349,63 @@ footer {
 
     .about {
       padding: 50px 0px;
-    
-      .descrizione p {
-        font-size: 1.2em;
+
+      p {
+        font-size: 18px;
       }
     }
 
+    .card {
+      line-height: 30px;
+    }
+
     section h2 {
-      font-size: 1.7em;
+      font-size: 27px;
     }
-  
-    .skills span {
-      font-size: 1em;
-    }
-  
+    
     .card-2 {
       display: block;
       margin-left: 40px;
     }
-  
-    .contatti p {
-      font-size: 1.1em;
+
+    .contatti{
+      .nav-buttons{
+        width: 65%;
+      }
     }
   }
 
-  footer p {
-    font-size: 0.7em;
+  footer {
+    justify-content: space-around;
+    p {
+      font-size: 12px;
+      margin-left: 0px;
+    }
+    nav {
+      margin-right: 0px;
+    }
   }
 }
 
 
 // modifiche per schermi > lg
 @media (min-width: 993px){
+  .button {
+    font-size: 18px;
+  }
 
+  body p {
+    font-size: 18px;
+  }
   .header{
     padding-left: 40px;
     padding-right: 40px;
     .nome  {
-      font-size: 2.2em;
+      font-size: 36px;
     }
 
-    a {
-      font-size: 1.1em;
+    li a {
+      font-size: 18px;
     }
   }
 
@@ -418,52 +413,55 @@ footer {
     display: block;
     max-width: 70%;
 
-    .about .descrizione p {
-      font-size: 1.3em;
+    .about p {
+      font-size: 20px;
     }
-  
+
     section h2 {
-      font-size: 1.8em;
+      font-size: 28px;
     }
-  
-    .skills span {
-      font-size: 1.1em;
-    }
-  
-    .contatti {
-      p  {
-        font-size: 1.2em;
-      }
-      a {
-        font-size: 1.2em;
+
+    .card {
+      img {
+        max-width: 200px;
+        max-height: 200px;
       }
     }
   }
 
-  .footer {
+  footer {
     p {
     margin-left: 100px;
-    font-size: 0.8em;
     margin-right: 300px;
+    font-size: 13px;
     }
     nav {
-      margin-right: 100px;
-    }
+    margin-right: 100px;
+      a {
+        margin: 5px;
+      }
+   }
   }
 }
 
 // modifiche per schermi > xl
 @media (min-width: 1201px){
+  .button {
+    font-size: 19px;
+  }
+
+  body p {
+    font-size: 19px;
+  }
 
   .header{
     padding-left: 60px;
     padding-right: 60px;
     .nome  {
-      font-size: 2.4em;
+      font-size: 39px;
     }
-
-    a {
-      font-size: 1.2em;
+    li a {
+      font-size: 19px;
     }
   }
 
@@ -471,36 +469,40 @@ footer {
     display: block;
     max-width: 60%;
 
-    .about .descrizione p {
-      font-size: 1.5em;
+    .about p {
+      font-size: 22px;
     }
   
     section h2 {
-      font-size: 1.9em;
+      font-size: 29px;
     }
-  
-    .skills span {
-      font-size: 1.2em;
-    }
-  
-    .contatti {
-       p {
-      font-size: 1.3em;
-       }
 
+    .card {
+      line-height: 35px;
+    }
+
+    .contatti {
        .nav-buttons {
-        width: 48%;
+        width: 50%;
        }
     }
   }
 
   footer {
     p {
-    font-size: 0.9em;
+    font-size: 14px;
     margin-right: 450px;
     }
     nav {
       margin-right: 150px;
     }
+  }
+}
+
+// modifiche per schermi > xxl
+@media (min-width: 1400px) {
+  .about img {
+    max-width: 25%;
+    max-height: 25%;
   }
 }
