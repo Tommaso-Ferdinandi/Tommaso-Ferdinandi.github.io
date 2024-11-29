@@ -31,11 +31,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   padding: 15px 20px;
+  margin: 5px auto;
 }
 
 legend {
   font-weight: 600;
-  font-size: 1.7em;
+  font-size: 32px;
   margin-top: 10px;
   margin-bottom: 20px;
   color: $primary-color;
@@ -68,14 +69,13 @@ textarea {
   margin-top: 10px;
   margin-bottom: 30px;
   padding-left: 5px;
-  max-width: 320px;
+  max-width: 85%;
   min-height: 150px;
 }
 
 .riga-btn {
-
   #submit {
-    width: 34%;
+    width: 85%;
     background-color: $primary-color;
     color:white;
     padding: 6px;
@@ -91,22 +91,6 @@ textarea {
   
   #submit:active {
     background-color: $third-color;
-  }
-  
-  #reset {
-    width: 34%;
-    background-color: white;
-    border: 1px solid $primary-color;
-    border-radius: 5px;
-    font-size: 17px;
-  }
-  
-  #reset:hover {
-    border-color: $secondary-color ;
-  }
-  
-  #reset:active {
-    border-color: $third-color;
   }
 }
 
@@ -124,10 +108,12 @@ textarea {
     box-shadow: none;
     border-radius: 0%;
     margin: 10px;
+
+    legend {
+      font-size: 28px;
+    }
   }
-  textarea {
-    max-width: 290px;
-  }
+  
 
 }
 
@@ -136,12 +122,9 @@ textarea {
   label, #email, #messaggio {
     font-size: 15px;
   }
-  textarea {
-    max-width: 245px;
-  }
 
   .riga-btn {
-    #reset, #submit {
+    #submit {
       font-size: 15px;
     }
   }
