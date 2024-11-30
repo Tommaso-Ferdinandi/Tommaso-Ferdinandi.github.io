@@ -251,7 +251,7 @@ section {
 
   .nav-buttons {
     display: flex;
-    width: 55%;
+    width: 70%;
     justify-content: space-around;
   }  
 }
@@ -295,6 +295,11 @@ footer {
   section h2 {
     font-size: 22px;
   }
+
+  .contatti .nav-buttons {
+    width: 80%;
+  }  
+
   footer p {
     font-size: 10px;
   }
@@ -370,7 +375,7 @@ footer {
 
     .contatti{
       .nav-buttons{
-        width: 65%;
+        width: 60%;
       }
     }
   }

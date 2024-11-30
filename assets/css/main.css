@@ -194,7 +194,7 @@ section h2 {
 }
 .contatti .nav-buttons {
   display: flex;
-  width: 55%;
+  width: 70%;
   justify-content: space-around;
 }
 
@@ -232,6 +232,9 @@ footer nav a {
   }
   section h2 {
     font-size: 22px;
+  }
+  .contatti .nav-buttons {
+    width: 80%;
   }
   footer p, footer .skills-livello span, .skills-livello footer span {
     font-size: 10px;
@@ -293,7 +296,7 @@ footer nav a {
     margin-left: 40px;
   }
   .core .contatti .nav-buttons {
-    width: 65%;
+    width: 60%;
   }
   footer {
     justify-content: space-around;
