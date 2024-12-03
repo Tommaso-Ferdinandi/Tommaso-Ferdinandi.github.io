@@ -136,7 +136,7 @@ body {
     font-size: 7px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 361px) {
   .informazioni-personali .profilo {
     max-height: 110px;
   }
